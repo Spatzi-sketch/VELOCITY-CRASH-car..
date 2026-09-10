@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState, type CSSProperties, type PointerEvent, type ReactNode } from "react";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { GarageModal } from "./components/GarageModal";
 import { HazardBriefing } from "./components/HazardBriefing";
 import { HazardLayer } from "./components/HazardLayer";
@@ -1155,6 +1156,7 @@ export default function App() {
         </div>
       )}
       <Analytics />
+      <SpeedInsights />
     </main>
   );
 }
